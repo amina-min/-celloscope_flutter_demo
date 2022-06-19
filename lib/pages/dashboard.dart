@@ -47,8 +47,8 @@ class Dashboard extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Date_Of_Birth: ${users.date_of_birth}",
-                  style: TextStyle(fontSize: 22, letterSpacing: 1,
+              child: Text("Date Of Birth: ${users.date_of_birth}",
+                  style: TextStyle(fontSize: 22,
                     color: Colors.grey,)),
             )
           ],
