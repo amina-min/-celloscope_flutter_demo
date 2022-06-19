@@ -60,7 +60,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[400],
+      backgroundColor: Colors.purple[900],
         appBar: AppBar(
           title: Text('Home Page'),
           backgroundColor: Colors.purple[900],
@@ -84,19 +84,19 @@ class _HomeState extends State<Home> {
                     style: TextStyle(
                         fontSize: 40,
                         fontWeight: FontWeight.bold,
-                        color: Colors.purple[800]),
+                        color: Colors.grey),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(left: 30.0, right: 30, top: 8),
                   child: TextFormField(
                     controller: _nameController,
-                    style: TextStyle(color: Colors.purple[800], fontSize: 20.0),
+                    style: TextStyle(color: Colors.grey, fontSize: 22.0),
                     decoration: InputDecoration(
                       suffixIcon: Icon(
                         Icons.person_add,
                         size: 20.0,
-                        color: Colors.purple[800],
+                        color: Colors.grey,
                       ),
                       border: UnderlineInputBorder(),
                       labelText: "Name",
@@ -107,10 +107,10 @@ class _HomeState extends State<Home> {
                   padding: const EdgeInsets.only(left: 30.0, right: 30, top: 8),
                   child: TextFormField(
                     controller: _dateOfBirthController,
-                    style: TextStyle(color: Colors.purple[800], fontSize: 20.0),
+                    style: TextStyle(color: Colors.grey, fontSize: 22.0),
                     decoration: InputDecoration(
                         suffixIcon: IconButton(
-                          color: Colors.purple[800],
+                          color: Colors.grey,
                           icon: Icon(Icons.calendar_month),
                           onPressed: () {
                             selectDate(context);
@@ -132,11 +132,11 @@ class _HomeState extends State<Home> {
                             }
                           : null,
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.purple[900], // Background color
+                        primary: Colors.amber[800], // Background color
                       ),
                       child: Text(
                         "Submit",
-                        style: TextStyle(fontSize: 20 , color: Colors.grey),
+                        style: TextStyle(fontSize: 20 , color: Colors.grey[700]),
                       )),
                 ),
               ],

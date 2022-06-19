@@ -47,7 +47,7 @@ class _LoadingState extends State<Loading> {
                     fontWeight: FontWeight.w400),
                 child: AnimatedTextKit(
                   animatedTexts: [
-                    TypewriterAnimatedText('Welcome'),
+                    TypewriterAnimatedText('Welcome',textStyle: TextStyle(color: Colors.grey)),
                   ],
                   onTap: () {
                     print("Tap Event");
@@ -59,7 +59,7 @@ class _LoadingState extends State<Loading> {
               height: 20,
             ),
             CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.amber.shade800),
             )
           ],
         ),

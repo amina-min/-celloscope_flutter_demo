@@ -19,7 +19,7 @@ class Dashboard extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(top: 12.0),
+              padding: const EdgeInsets.only(top: 18.0),
               child: CircleAvatar(
                 backgroundImage: AssetImage('assets/allen-nelson-asset.jpg'),
                 radius: 60.0,
@@ -50,7 +50,11 @@ class Dashboard extends StatelessWidget {
               child: Text("Date Of Birth: ${users.date_of_birth}",
                   style: TextStyle(fontSize: 22,
                     color: Colors.grey,)),
-            )
+            ),
+            Divider(
+              height: 60.0,
+              color: Colors.grey[600],
+            ),
           ],
         ),
       ),
